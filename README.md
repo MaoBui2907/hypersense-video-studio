@@ -6,33 +6,34 @@ Skill công ty rút gọn để một coding agent tự sản xuất phim ngắn
 
 ```text
 SKILL.md
-scripts/setup.sh
 scripts/doctor.sh
 scripts/render.sh
 scripts/styles.txt
 ```
 
-**18 style, phủ đủ 15 nhóm:**
+**26 style, phủ đủ 15 nhóm, gồm gói Kids & Education 8 style:**
 
 | Nhóm | Style |
 |---|---|
 | Edit & Documentary | Broadcast News Package (`news-package`) |
-| Painting & Illustration | Watercolor Brush (`watercolor`) |
-| Sketch & Board | Whiteboard Explainer (`whiteboard`) |
+| Painting & Illustration | Watercolor Brush, Crayon Picture Book, Colored-Pencil Science Illustration (`watercolor`, `crayon-book`, `colored-pencil`) |
+| Sketch & Board | Whiteboard Explainer, Chalkboard, Sketchnote, Stick-figure Explainer (`whiteboard`, `chalkboard`, `sketchnote`, `stick-explainer`) |
 | Traditional Crafts | Chinese Ink Wash (`ink-wash`) |
 | Print & Printmaking | Risograph Print (`risograph`) |
 | Graphic & Type | Swiss Motion Graphics (`swiss-motion`) |
-| Line Diagrams | Blueprint, Exploded Teardown, Isometric Infographic (`blueprint`, `teardown`, `iso-infographic`) |
-| Cartoons | 1930s Rubber Hose Cartoon (`rubber-hose`) |
+| Line Diagrams | Blueprint, Exploded Teardown, Isometric Infographic, Instruction Manual Art (`blueprint`, `teardown`, `iso-infographic`, `instruction-manual`) |
+| Cartoons | 1930s Rubber Hose Cartoon, Mid-century Cartoon (`rubber-hose`, `midcentury-toon`) |
 | Games | 16-bit Pixel RPG (`pixel-rpg`) |
 | Film & Tape | CRT ASCII Terminal (`ascii-crt`) |
 | Screens & Interfaces | Dark Tech Keynote, Spreadsheet Film (`dark-keynote`, `spreadsheet`) |
 | Light & Lines | Neon Tubes (`neon-tubes`) |
-| 3D & Miniature | Low-poly Isometric Island (`lowpoly-island`) |
+| 3D & Miniature | Low-poly Isometric Island, Paper Pop-up Book (`lowpoly-island`, `paper-popup`) |
 | Instruments & Evidence | Engineering Briefing Board (`briefing-board`) |
 | Data & Maps | Data Storytelling (`dataviz`) |
 
-Đã loại 3 style cần image generator: `manga-panels`, `text-flash-cuts`, `comic-history`. Không style nào cần sinh video.
+**Kids & Education pack:** `crayon-book`, `paper-popup`, `midcentury-toon`, `chalkboard`, `sketchnote`, `stick-explainer`, `instruction-manual`, `colored-pencil`.
+
+Đã loại 3 style cần image generator: `manga-panels`, `text-flash-cuts`, `comic-history`. Không style nào cần sinh video; `paper-popup`/`brick-toy` kiểu 3D cần GPU.
 
 ## Cài đặt
 

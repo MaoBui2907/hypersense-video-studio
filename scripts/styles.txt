@@ -1,18 +1,26 @@
 news-package|Broadcast News Package|Tin tức, sự kiện, bản tin có đồ họa
 watercolor|Watercolor Brush|Câu chuyện, thiên nhiên, giải thích nhẹ
+crayon-book|Crayon Picture Book|Sách tranh, bedtime, học cho bé
+colored-pencil|Colored-Pencil Science Illustration|Khoa học tự nhiên, cấu tạo, picture-book
 whiteboard|Whiteboard Explainer|Onboarding, giải thích quy trình
+chalkboard|Chalkboard|Bài giảng, từ vựng, myth-busting
+sketchnote|Sketchnote|Ghi chú bài giảng, tóm tắt một trang
+stick-explainer|Stick-figure Explainer|Khoa học, mạng, so sánh dữ liệu
 ink-wash|Chinese Ink Wash|Kể chuyện, văn hóa, thương hiệu
 risograph|Risograph Print|Poster động, social, nội dung trẻ
 swiss-motion|Swiss Motion Graphics|Brand, explainer sạch, nhịp nhanh
 blueprint|Blueprint|Kiến trúc hệ thống, quy trình kỹ thuật
 teardown|Exploded Teardown|Phân rã sản phẩm/tính năng, cấu trúc
 iso-infographic|Isometric Infographic|Tổng quan hệ sinh thái, sơ đồ khối
+instruction-manual|Instruction Manual Art|How-to, thí nghiệm, an toàn
 rubber-hose|1930s Rubber Hose Cartoon|Kể chuyện vui, giải thích nhẹ nhàng
+midcentury-toon|Mid-century Cartoon|Hoạt hình vui, how-to, help centre
 pixel-rpg|16-bit Pixel RPG|Sản phẩm game, cộng đồng, retro
 ascii-crt|CRT ASCII Terminal|Kỹ thuật, terminal, không khí hacker
 dark-keynote|Dark Tech Keynote|Launch sản phẩm, demo tính năng, công nghệ
 spreadsheet|Spreadsheet Film|Dữ liệu dạng bảng, so sánh, dashboard
 neon-tubes|Neon Tubes|Social clip, nhận diện mạnh, teaser
 lowpoly-island|Low-poly Isometric Island|Hệ sinh thái, bản đồ, không gian 3D
+paper-popup|Paper Pop-up Book|Sách pop-up, story film (cần GPU)
 briefing-board|Engineering Briefing Board|Báo cáo kỹ thuật, thông số, chứng cứ
 dataviz|Data Storytelling|Số liệu, KPI, báo cáo, thị trường

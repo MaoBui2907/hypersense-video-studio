@@ -1,11 +1,11 @@
 ---
 name: video-studio
-description: Sản xuất phim ngắn 30-60 giây hoàn toàn bằng code bằng Lemo-Opuscar, chỉ dùng 18 style đã chọn. Dùng khi cần promo, explainer, launch clip, social clip hoặc video dữ liệu; có script kiểm tra môi trường và render. Không dùng cho video quay người thật hoặc chỉnh sửa video có sẵn.
+description: Sản xuất phim ngắn 30-60 giây hoàn toàn bằng code bằng Lemo-Opuscar, chỉ dùng 26 style đã chọn. Dùng khi cần promo, explainer, launch clip, social clip hoặc video dữ liệu; có script kiểm tra môi trường và render. Không dùng cho video quay người thật hoặc chỉnh sửa video có sẵn.
 ---
 
 # Video Studio (bản rút gọn)
 
-Skill công ty để một agent tự làm phim ngắn bằng code với Lemo-Opuscar. Đây là bản rút gọn: chỉ dùng 18 style đã duyệt, cài thư viện một lần, có script kiểm tra và render. Không cần cài 99 style vào quy trình hằng ngày.
+Skill công ty để một agent tự làm phim ngắn bằng code với Lemo-Opuscar. Đây là bản rút gọn: chỉ dùng 26 style đã duyệt, cài thư viện một lần, có script kiểm tra và render. Không cần cài 99 style vào quy trình hằng ngày.
 
 ## Khi nào dùng
 
@@ -18,7 +18,7 @@ Skill công ty để một agent tự làm phim ngắn bằng code với Lemo-Op
 - Video cần người thật, phỏng vấn, quay hiện trường, sự kiện thật.
 - Chỉnh sửa/cắt/ghép video có sẵn của người dùng.
 - Video cần giao trong dưới 30 phút hoặc không có ngân sách token.
-- Style nằm ngoài danh sách 18 style bên dưới, trừ khi CEO/CTO duyệt bổ sung.
+- Style nằm ngoài danh sách 26 style bên dưới, trừ khi CEO/CTO duyệt bổ sung.
 
 ## Cài đặt một lần
 
@@ -33,7 +33,7 @@ git -C "$LEMO_HOME" checkout 3a7132b996be0241c1ea0ab180d519f06e6f10b6
 sh scripts/doctor.sh
 ```
 
-`doctor.sh` kiểm tra Node 20+, ffmpeg 7+, Python 3.11+, thư viện và 18 style. Skill không đóng gói script clone/fetch để Paperclip import không bị chặn.
+`doctor.sh` kiểm tra Node 20+, ffmpeg 7+, Python 3.11+, thư viện và 26 style. Skill không đóng gói script clone/fetch để Paperclip import không bị chặn.
 
 Biến môi trường:
 
@@ -44,37 +44,45 @@ Biến môi trường:
 | `WORKERS` | `2` | Số worker render; 1–3 cho máy yếu |
 | `CHECK` | `1` | `0` để bỏ qua readcheck khi render |
 
-## 18 style được duyệt
+## 26 style được duyệt
 
 | Nhóm | Slug | Tên | Dùng cho |
 |---|---|---|---|
 | Edit & Documentary | `news-package` | Broadcast News Package | Tin tức, sự kiện, bản tin có đồ họa |
 | Painting & Illustration | `watercolor` | Watercolor Brush | Câu chuyện, thiên nhiên, giải thích nhẹ |
+| Painting & Illustration | `crayon-book` | Crayon Picture Book | Sách tranh, bedtime, học cho bé |
+| Painting & Illustration | `colored-pencil` | Colored-Pencil Science Illustration | Khoa học tự nhiên, cấu tạo, picture-book |
 | Sketch & Board | `whiteboard` | Whiteboard Explainer | Onboarding, giải thích quy trình |
+| Sketch & Board | `chalkboard` | Chalkboard | Bài giảng, từ vựng, myth-busting |
+| Sketch & Board | `sketchnote` | Sketchnote | Ghi chú bài giảng, tóm tắt một trang |
+| Sketch & Board | `stick-explainer` | Stick-figure Explainer | Khoa học, mạng, so sánh dữ liệu |
 | Traditional Crafts | `ink-wash` | Chinese Ink Wash | Kể chuyện, văn hóa, thương hiệu |
 | Print & Printmaking | `risograph` | Risograph Print | Poster động, social, nội dung trẻ |
 | Graphic & Type | `swiss-motion` | Swiss Motion Graphics | Brand, explainer sạch, nhịp nhanh |
 | Line Diagrams | `blueprint` | Blueprint | Kiến trúc hệ thống, quy trình kỹ thuật |
 | Line Diagrams | `teardown` | Exploded Teardown | Phân rã sản phẩm/tính năng, cấu trúc |
 | Line Diagrams | `iso-infographic` | Isometric Infographic | Tổng quan hệ sinh thái, sơ đồ khối |
+| Line Diagrams | `instruction-manual` | Instruction Manual Art | How-to, thí nghiệm, an toàn |
 | Cartoons | `rubber-hose` | 1930s Rubber Hose Cartoon | Kể chuyện vui, giải thích nhẹ nhàng |
+| Cartoons | `midcentury-toon` | Mid-century Cartoon | Hoạt hình vui, how-to, help centre |
 | Games | `pixel-rpg` | 16-bit Pixel RPG | Sản phẩm game, cộng đồng, retro |
 | Film & Tape | `ascii-crt` | CRT ASCII Terminal | Kỹ thuật, terminal, không khí hacker |
 | Screens & Interfaces | `dark-keynote` | Dark Tech Keynote | Launch sản phẩm, demo tính năng, công nghệ |
 | Screens & Interfaces | `spreadsheet` | Spreadsheet Film | Dữ liệu dạng bảng, so sánh, dashboard |
 | Light & Lines | `neon-tubes` | Neon Tubes | Social clip, nhận diện mạnh, teaser |
 | 3D & Miniature | `lowpoly-island` | Low-poly Isometric Island | Hệ sinh thái, bản đồ, không gian 3D |
+| 3D & Miniature | `paper-popup` | Paper Pop-up Book | Sách pop-up, story film (cần GPU) |
 | Instruments & Evidence | `briefing-board` | Engineering Briefing Board | Báo cáo kỹ thuật, thông số, chứng cứ |
 | Data & Maps | `dataviz` | Data Storytelling | Số liệu, KPI, báo cáo, thị trường |
 
-18 style phủ đủ 15 nhóm. Đã loại 3 style cần image generator (`manga-panels`, `text-flash-cuts`, `comic-history`); không style nào cần sinh video.
+26 style phủ đủ 15 nhóm, gồm gói Kids & Education 8 style. Đã loại 3 style cần image generator (`manga-panels`, `text-flash-cuts`, `comic-history`); không style nào cần sinh video.
 
 Danh sách máy đọc: `scripts/styles.txt`.
 
 ## Quy trình bắt buộc
 
 1. **Brief.** Chốt mục tiêu, đối tượng, thông điệp, CTA, thời lượng, tỷ lệ khung hình, ngôn ngữ, brand asset. Không hỏi lại những gì brief đã trả lời.
-2. **Chọn style.** Chỉ chọn trong 18 style trên. Nếu không phù hợp, báo CEO/CTO thay vì tự thêm style.
+2. **Chọn style.** Chỉ chọn trong 26 style trên. Nếu không phù hợp, báo CEO/CTO thay vì tự thêm style.
 3. **Treatment.** Viết `TREATMENT.md` trong project folder: 3 phương án cấu trúc, chọn 1, lý do, timeline, lời thoại/chữ trên màn hình, asset cần. Viết trước khi đọc demo của style.
 4. **Look frame.** Render 3–5 still bằng code thật, đối chiếu `STYLE.md`; chỉ khi đạt mới sản xuất full.
 5. **Sản xuất.** Voice → nhạc → hình → mix → render. Dùng `core/` của thư viện, không sửa `core/` hoặc `styles/`.
